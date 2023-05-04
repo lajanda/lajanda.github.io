@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>OCSGPs</title>
+</head>
+
+<body>
+<p>&nbsp;</p>
+<h1>Hanne M. Eckhoff and Laura A. Janda. “Grammatical Profiles and Aspect in Old Church Slavonic”. Forthcoming in <i>Transactions of the Philological Society</i>.  
+</h1> 
+<h3>This website provides data and R scripts for the analyses in our article.</h3>
+<hr>
+<p>NOTE: If you are already a proficient R user, skip down to the next horizontal line to get the data and R scripts.
+<h3>How to download R</h3>
+<p>You can download the R statistical software package to your computer from the <a href="http://cran.r-project.org/">R project webpage</a>. 
+<p>Once you have downloaded R, you will need to install the following packages:  languageR and cluster. Use the Package Installer in the Menu and Get List to search for these packages.
+
+<h3>How to download and run the files from this website</h3>
+<p>On this webpage we offer you two types of files that you can download to your computer. You can download these files by right-clicking on the links on this page. One type of files has the ".r" extension. This is indicates an "R script". The R scripts contain all the commands that R needs in order to run the statistical test. You can open the R scripts if you like and see all the commands. We provide commentary on the commands in lines that begin with the "#" symbol (R itself ignores all these lines) in order to help you follow along. The other type of file has the ".csv" extension and contains a dataset. The R scripts perform the statistical analyses on the datasets. If you want to look at the datasets, you can open them with Microsoft Excel. It is important that you download all of these files to your home directory in your computer so that R can find them. If you do not know where your home directory is, you can also copy and paste the R commands from the scripts directly into the R window (see "Alternative methods for running R scripts" below). However, you will need to tell R where to find the .csv file with the dataset, by giving it the correct path, and you will have to put this into the R code.  
+
+<h3>How to run the files from this website in R</h3>
+<p>After you have downloaded an R script, you can open the R program on your computer. At the ">" prompt, type in: source("") and put the name of the R script you want to run between the quotation marks. For example, you can enter a line that looks like this: > source("verbs.r") and when you hit the return key, R will run the R script and give you all of the results as output. 
+
+<h3>Alternative methods for running R scripts</h3>
+<p>If you simply click on the links with the R scripts, you can then copy and paste all of the code into the R window and R will run the commands and give you the same results. Another option is to download the R script to any location in your computer you want to and provide the path to the file when you use the source command. For example, you can enter a line that looks like this: > source("/Users/janedoe/Downloads/verbs.r") for Mac users or > source("C://Documents/verbs.r") for PC users. If you do not know the path, you can open your finder to where the R script is and then drag and drop that file into an open R window placing it after the cursor prompt ">". When you do this, R will tell you what the path to the file is and you can copy and paste that into the source command.
+
+
+
+<hr>
+<h3>The Data</h3>
+<p>This is the primary dataset for our analysis: <a href="verbs.csv">verbs.csv</a> You can also download it directly as a Microsoft Excel file in this version: <a href="verbs.xls">verbs.xls</a>, but you do not need this version in order to run the R script below.
+<p>In addition, there is another smaller dataset that we use for checking the Greek correspondents of righty present tense occurrences: <a href="righty_greek_present.csv">righty_greek_present.csv</a> 
+<p>Both of these datasets will be sourced by the R script if you put them in the same directory in your computer as the R script.
+
+<h3>The R Scripts</h3>
+<p>This is the primary R script for our analysis: <a href="verbs.r">verbs.r</a>. This script performs all of the steps for the analysis in our article and in addition generates a number of figures and plots that are not in the article (for example, the Diana plot for the hierarchical clustering analysis).
+<p>In addition, there is a transliteration script: <a href="translit.r">translit.r</a>. You should put it in the same directory as the primary R script, since verbs.r will source the transliteration script in order to transliterate the data in verbs.csv.
+
+
+<hr>
+</body>
+</html>
